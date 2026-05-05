@@ -1,11 +1,18 @@
-var data = JSON.parse(localStorage.getItem("khachHang"));
+<div id="info"></div>
 
-if (data) {
-    document.getElementById("info").innerHTML =
-        "Họ tên: " + data.name + "<br>" +
-        "Email: " + data.email + "<br>" +
-        "Điện thoại: " + data.phone + "<br>" +
-        "Tin nhắn: " + data.message;
-} else {
-    document.getElementById("info").innerHTML = "Không có dữ liệu!";
-}
+<script>
+  // Dòng này để kiểm tra dữ liệu
+  console.log(localStorage.getItem("khachHang"));
+
+  var data = JSON.parse(localStorage.getItem("khachHang"));
+
+  if (data) {
+      document.getElementById("info").innerHTML =
+          "Họ tên: " + data.name + "<br>" +
+          "Email: " + data.email + "<br>" +
+          "Điện thoại: " + data.phone + "<br>" +
+          "Tin nhắn: " + data.message;
+  } else {
+      document.getElementById("info").innerHTML = "Không có dữ liệu!";
+  }
+</script>
