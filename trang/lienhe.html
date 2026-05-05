@@ -99,32 +99,36 @@
   </div>
 </div>
     <script>
-      function guithongtin()
-      {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var phone = document.getElementById("phone").value;
-        var message = document.getElementById("message").value;
-      
+function guithongtin() {
 
-      if(name ==="" || email==="")
-      {
-        alert("Vui long nhap ten va email!");
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "") {
+        alert("Vui lòng nhập tên và email!");
         return;
-      }
+    }
 
-      var data =
-      {
+    var data = {
         name: name,
         email: email,
         phone: phone,
-        message: message,
-      };
+        message: message
+    };
 
-      localStorage.setItem("khachHang",JSON.stringify(data));
-      console.log("Đã lưu data:", localStorage.getItem("khachHang"));
-      window.location.href  ="admin.html";
-      }
-    </script>
+    // lưu lại (nếu muốn)
+    localStorage.setItem("khachHang", JSON.stringify(data));
+
+    // HIỂN THỊ NGAY TRÊN TRANG
+    document.getElementById("info").innerHTML =
+        " Gửi thành công! <br><br>" +
+        "Họ tên: " + data.name + "<br>" +
+        "Email: " + data.email + "<br>" +
+        "Điện thoại: " + data.phone + "<br>" +
+        "Tin nhắn: " + data.message;
+}
+</script>
 </body>
 </html>
