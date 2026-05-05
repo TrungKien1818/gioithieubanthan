@@ -91,13 +91,39 @@
           <label for="message">Tin nhắn:</label>
           <textarea class="form-control" id="message" rows="5" placeholder="Nhập tin nhắn"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Gửi</button>
+        <button type="button" class="btn btn-primary" onclick="guithongtin()">Gửi</button>
       </div>
       </div>
       <a href="../index.html" style="float: right;">Quay lại trang đầu</a>
     </div>
   </div>
 </div>
+    <script>
+      function guithongtin()
+      {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+      
 
+      if(name ==="" || email==="")
+      {
+        alert("Vui long nhap ten va email!");
+        return;
+      }
+
+      var data =
+      {
+        name: name,
+        email: email,
+        phone: phone,
+        message: message,
+      };
+
+      localStorage.setItem("KhachHang",JSON.stringify(data));
+      window.location.href  ="admin.html";
+      }
+    </script>
 </body>
 </html>
