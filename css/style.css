@@ -138,3 +138,20 @@ body{
 
     color:gray;
 }
+.back-link{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 12px;
+
+    background: white;
+    border-radius: 6px;
+
+    text-decoration: none;
+    color: #007bff;
+
+    font-size: 14px;
+}
+
+.back-link:hover{
+    background: #f1f1f1;
+}
