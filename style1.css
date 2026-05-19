@@ -1,0 +1,130 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #e5e5e5;
+    font-family: Arial;
+}
+
+/* Khung chính */
+.khung-chinh {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Tiêu đề */
+.tieu-de {
+    background-color: #8aa84c;
+    padding: 30px;
+    text-align: center;
+}
+
+.tieu-de h1 {
+    font-size: 50px;
+}
+
+/* Form */
+form {
+    padding: 35px;
+}
+
+/* Mỗi dòng nhập */
+.nhom-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Label */
+.nhom-form label {
+    width: 180px;
+    font-size: 22px;
+}
+
+/* Input + select */
+.nhom-form input,
+.nhom-form select {
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    background: transparent;
+    font-size: 18px;
+}
+
+/* Giới tính */
+.gioi-tinh {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+/* Sở trường */
+.so-truong {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+/* Mô tả */
+.mo-ta {
+    align-items: flex-start;
+}
+
+/* Textarea */
+textarea {
+    width: 70%;
+    height: 120px;
+    padding: 10px;
+    font-size: 18px;
+    resize: none;
+}
+
+/* Nút bấm */
+.nut-bam {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nut-bam button {
+    background-color: #8aa84c;
+    padding: 12px 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.nut-bam button:hover {
+    opacity: 0.8;
+}
+
+/* NÚT QUAY LẠI TRANG LIÊN HỆ (bên phải) */
+.nut-lien-he {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;   /* nằm bên phải */
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Hover nút */
+.nut-lien-he:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
