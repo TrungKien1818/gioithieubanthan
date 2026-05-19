@@ -1,0 +1,321 @@
+
+
+/* Dấu * nghĩa là áp dụng cho toàn bộ trang web */
+*{
+
+    margin: 0;
+    /* Xóa khoảng cách bên ngoài mặc định */
+
+    padding: 0;
+    /* Xóa khoảng cách bên trong mặc định */
+
+    box-sizing: border-box;
+    /* Giúp width và height tính luôn cả padding + border */
+
+}
+
+
+
+/* Phần thân website */
+body{
+
+    background-color: #e5e5e5;
+    /* Đổi màu nền */
+
+    font-family: Arial;
+    /* Đổi font chữ */
+
+}
+
+
+
+/* Khung chính chứa form */
+.khung-chinh{
+
+    width: 80%;
+    /* Chiều rộng chiếm 90% màn hình */
+
+    margin: 20px auto;
+    /*
+        20px : cách trên dưới 20px
+        auto : tự căn giữa trái phải
+    */
+
+    background-color: white;
+    /* Màu nền trắng */
+
+    border-radius: 20px;
+    /* Bo góc */
+
+    overflow: hidden;
+    /* Ẩn phần bị tràn ra ngoài */
+
+}
+
+
+
+/* Phần tiêu đề */
+.tieu-de{
+
+    background-color: #8aa84c;
+    /* Màu nền xanh */
+
+    padding: 30px;
+    /* Khoảng cách bên trong */
+
+    text-align: center;
+    /* Căn chữ ra giữa */
+
+}
+
+
+
+/* Chữ tiêu đề */
+.tieu-de h1{
+
+    font-size: 50px;
+    /* Kích thước chữ */
+
+}
+
+
+
+/* Toàn bộ form */
+form{
+
+    padding: 35px;
+    /* Khoảng cách bên trong form */
+
+}
+
+
+
+/* Mỗi dòng nhập liệu */
+.nhom-form{
+
+    display: flex;
+    /*
+        Sắp xếp các phần tử nằm ngang
+        label nằm bên trái
+        input nằm bên phải
+    */
+
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+
+    margin-bottom: 25px;
+    /* Khoảng cách phía dưới */
+
+}
+
+
+
+/* Phần chữ bên trái */
+.nhom-form label{
+
+    width: 180px;
+    /* Độ rộng cố định */
+
+    font-size: 22px;
+    /* Cỡ chữ */
+
+}
+
+
+
+/* Ô nhập và select */
+.nhom-form input,
+.nhom-form select{
+
+    width: 70%;
+    /* Độ rộng */
+
+    border: none;
+    /* Xóa viền mặc định */
+
+    border-bottom: 1px solid black;
+    /* Tạo gạch dưới */
+
+    padding: 10px;
+    /* Khoảng cách bên trong */
+
+    background: transparent;
+    /* Nền trong suốt */
+
+    font-size: 18px;
+    /* Cỡ chữ */
+
+}
+
+
+
+/* Khu vực giới tính */
+.gioi-tinh{
+
+    display: flex;
+    /* Hiển thị ngang */
+
+    gap: 30px;
+    /* Khoảng cách giữa các phần tử */
+
+    font-size: 20px;
+    /* Cỡ chữ */
+
+}
+
+
+
+/* Khu vực sở trường */
+.so-truong{
+
+    display: flex;
+    /* Hiển thị ngang */
+
+    gap: 20px;
+    /* Khoảng cách */
+
+    font-size: 18px;
+    /* Cỡ chữ */
+
+}
+
+
+
+/* Dòng mô tả */
+.mo-ta{
+
+    align-items: flex-start;
+    /*
+        Đưa label lên đầu
+        vì textarea cao hơn bình thường
+    */
+
+}
+
+
+
+/* Ô nhập nhiều dòng */
+textarea{
+
+    width: 70%;
+    /* Độ rộng */
+
+    height: 120px;
+    /* Chiều cao */
+
+    padding: 10px;
+    /* Khoảng cách bên trong */
+
+    font-size: 18px;
+    /* Cỡ chữ */
+
+    resize: none;
+    /* Không cho kéo giãn textarea */
+
+}
+
+
+
+/* Khu vực nút */
+.nut-bam{
+
+    text-align: center;
+    /* Căn giữa nút */
+
+    margin-top: 30px;
+    /* Khoảng cách phía trên */
+
+}
+
+
+
+/* Nút bấm */
+.nut-bam button{
+
+    background-color: #8aa84c;
+    /* Màu nền */
+
+    padding: 12px 25px;
+    /*
+        12px : trên dưới
+        25px : trái phải
+    */
+
+    border: 1px solid black;
+    /* Viền */
+
+    border-radius: 5px;
+    /* Bo góc */
+
+    font-size: 22px;
+    /* Cỡ chữ */
+
+    cursor: pointer;
+    /* Đổi chuột thành bàn tay */
+
+    margin: 0 10px;
+    /* Khoảng cách giữa các nút */
+
+}
+
+
+
+/* Khi đưa chuột vào nút */
+.nut-bam button:hover{
+
+    opacity: 0.8;
+    /*
+        Làm nút mờ nhẹ
+        tạo hiệu ứng hover
+    */
+
+}
+/* CSS cho nút liên hệ */
+.nut-lien-he{
+
+    /* Cố định vị trí trên màn hình */
+    position: fixed;
+
+    /* Cách mép dưới 20px */
+    bottom: 20px;
+
+    /* Cách mép phải 20px */
+    right: 20px;
+
+    /* Màu nền xanh */
+    background-color: #007bff;
+
+    /* Màu chữ trắng */
+    color: white;
+
+    /* 
+       Khoảng cách bên trong nút
+       12px: trên dưới
+       20px: trái phải
+    */
+    padding: 12px 20px;
+
+    /* Bo tròn góc */
+    border-radius: 10px;
+
+    /* Xóa gạch chân của thẻ a */
+    text-decoration: none;
+
+    /* Chữ đậm */
+    font-weight: bold;
+
+    /* 
+       Tạo bóng cho nút
+       0: ngang
+       4px: dọc
+       10px: độ mờ
+    */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Khi đưa chuột vào nút */
+.nut-lien-he:hover{
+
+    /* Đổi sang màu xanh đậm hơn */
+    background-color: #0056b3;
+}
