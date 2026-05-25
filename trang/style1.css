@@ -1,0 +1,154 @@
+/* ===== RESET CSS ===== */
+/* Xóa toàn bộ margin + padding mặc định của trình duyệt */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* tính kích thước chuẩn, không bị lệch layout */
+}
+
+/* ===== BODY ===== */
+/* Toàn bộ trang web */
+body{
+    font-family: Arial;     /* font chữ toàn trang */
+    background: #f2f2f2;     /* nền xám nhạt */
+}
+
+/* ===== HEADER (banner) ===== */
+/* Khung phần đầu trang */
+header{
+    width: 85%;   /* chiếm 85% màn hình */
+    margin: auto; /* căn giữa */
+}
+
+/* Ảnh banner */
+.anh-banner{
+    width: 100%;     /* ảnh full chiều ngang */
+    display: block;  /* bỏ khoảng trắng dưới ảnh */
+}
+
+/* ===== MENU NGANG ===== */
+/* Thanh menu chính */
+nav{
+    width: 85%;
+    margin: auto;
+    background: #1e90ff; /* nền xanh */
+}
+
+/* Danh sách menu */
+.menu-ngang{
+    display: flex;          /* xếp ngang */
+    list-style: none;       /* bỏ dấu chấm */
+    justify-content: center;/* căn giữa */
+}
+
+/* Từng mục menu */
+.menu-ngang li{
+    padding: 14px 20px; /* khoảng cách cho dễ bấm */
+}
+
+/* Link trong menu */
+.menu-ngang li a{
+    color: white;           /* chữ trắng */
+    text-decoration: none;  /* bỏ gạch chân */
+    font-weight: bold;      /* chữ đậm */
+    font-size: 14px;
+}
+
+/* Hiệu ứng khi rê chuột */
+.menu-ngang li:hover{
+    background: #1877d2; /* đổi màu nền */
+}
+
+/* ===== ĐƯỜNG DẪN ===== */
+/* hiển thị vị trí trang */
+.duong-dan-trang{
+    width: 85%;
+    margin: 10px auto;
+    color: gray;
+    font-size: 15px;
+}
+
+/* ===== MAIN (2 cột) ===== */
+/* khu vực nội dung chính */
+main{
+    width: 85%;
+    margin: auto;
+    display: flex;     /* chia trái phải */
+    min-height: 500px;
+}
+
+/* ===== MENU BÊN TRÁI ===== */
+.menu-ben-trai{
+    width: 300px;          /* cột trái cố định */
+    background: white;     /* nền trắng */
+    border: 1px solid #ddd;/* viền xám */
+}
+
+/* danh sách bên trái */
+.menu-ben-trai ul{
+    list-style: none; /* bỏ chấm */
+}
+
+/* từng mục bên trái */
+.menu-ben-trai ul li{
+    padding: 18px;
+    border-bottom: 1px solid #eee; /* kẻ dòng */
+    font-weight: bold;
+}
+
+/* mục đang chọn */
+.dang-chon{
+    color: #1e90ff; /* màu xanh */
+}
+
+/* ===== NỘI DUNG CHÍNH ===== */
+.noi-dung-chinh{
+    flex: 1;            /* chiếm phần còn lại */
+    background: white;  /* nền trắng */
+    margin-left: 20px;  /* cách menu trái */
+}
+
+/* ===== FOOTER ===== */
+/* chân trang */
+footer{
+    width: 85%;
+    margin: 50px auto 0;
+    background: #ddd;
+    display: flex;  /* chia ngang */
+    padding: 20px;
+}
+
+/* logo footer */
+.logo-chan-trang img{
+    width: 120px;
+}
+
+/* thông tin footer */
+.thong-tin-chan-trang{
+    margin-left: 20px;
+}
+
+/* từng dòng trong footer */
+.thong-tin-chan-trang p{
+    margin-bottom: 12px;
+}
+
+/* icon */
+footer i{
+    color: #1e90ff;
+    margin-right: 6px;
+}
+
+/* ===== KHỐI LIÊN HỆ BÊN PHẢI DƯỚI FOOTER ===== */
+.lien-he-right{
+    width: 85%;              /* Chiều rộng bằng 85% trang, giống layout chính */
+    margin: 20px auto;      /* Cách trên dưới 20px, auto = căn giữa khối */
+    text-align: right;      /* Đẩy nội dung (link) sang bên phải */
+}
+
+/* ===== STYLE CHO LINK LIÊN HỆ ===== */
+.lien-he-right a{
+    text-decoration: none;  /* Bỏ gạch chân mặc định của thẻ a */
+    color: #1e90ff;         /* Đổi màu chữ sang xanh dương */
+    font-weight: bold;      /* Làm chữ đậm cho dễ nhìn */
+}
